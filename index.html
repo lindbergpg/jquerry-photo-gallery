@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Photo gallery</h1>
+        </div>
+        <div>
+            <button type="button" id="btn-mais">+Mais fotos</button>
+        </div>
+    </header>
+    <form>
+        <h2>Adicionar mais fotos?</h2>
+        <input type="url" id="endereco-imagem" placeholder="URL da imagem" required>
+        <button type="submit">Adicionar</button>
+        <button type="reset" id="btn-cancel">Cancelar</button>
+    </form>
+    <ul>
+        <li>
+            <img src="./images/foto1.jpg" alt="Gato">
+            <div class="overlay-img-lk">
+                <a href="./images/foto1.jpg" target="_blank" title="Ver a imagem em tamanho real">Ver a imagem em tamanho real</a>
+            </div>
+        </li>
+        <li>
+            <img src="./images/foto2.jpg" alt="Gato">
+            <div class="overlay-img-lk">
+                <a href="./images/foto2.jpg" target="_blank" title="Ver a imagem em tamanho real">Ver a imagem em tamanho real</a>
+            </div>
+        </li>
+        <li>
+            <img src="./images/foto3.jpg" alt="Gato">
+            <div class="overlay-img-lk">
+                <a href="./images/foto3.jpg" target="_blank" title="Ver a imagem em tamanho real">Ver a imagem em tamanho real</a>
+            </div>
+        </li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
